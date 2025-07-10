@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ClicSalud+</title>
+    <link rel="stylesheet" href="clicsaludEstlos.css">
+    <script src="clicsaludAction.js"></script>
+</head>
+
+<body>
+    <header id="cabecera-salud">
+        <div id="logo-consejeria">
+            <picture>
+                <source srcset="img/logo-consejeria.png" type="image/png" />
+                <img src="img/logo-consejeria.png"" alt=" Logo ClicSalud+" />
+            </picture>
+            <h1>Clic<span class="resaltado">Salud+</span></h1>
+        </div>
+        <div id="acceso">
+            <a href="#">Datos Personales</a>
+            <a href="#">Certificado Digital o DNIe</a>
+            <a href="#">Cl@ve</a>
+        </div>
+        <div id="busqueda">
+            <input type="search" placeholder="Búsqueda..." />
+        </div>
+    </header>
+    <section>
+        <div id="mensaje-asistencia">
+            <h2>Asistencia dental infantil (de 0 a 15 años)</h2>
+            <p>Para la revisión programada, <span class="resaltado">recomendada a los 2, 6 y 12 años</span>, puede
+                obtener cita accediendo a la opción
+                <span class="resaltado">Dentista</span> en <a href="#" class="enlace">pedir cita de atención
+                    primaria</a> de esta página.
+            </p>
+            <p>También se puede solicitar cita a través de la App Salud Andalucía, App y teléfono de Salud Responde
+                (955 54 50 60).</p>
+        </div>
+    </section>
+    <div id="selector-sector">
+        <button id="publico" aria-label="Sector Público" onclick="mostrarInfo('publico')">Sector Público</button>
+        <button id="privado" aria-label="Sector Privado" onclick="mostrarInfo('privado')">Sector Privado</button>
+    </div>
+
+    <section>
+        <div id="info-publico">
+            <div class="bloque-opcion">
+                <picture>
+                    <source srcset="img/agenda.png" type="image/png">
+                    <img src="img/agenda.png">
+                </picture>
+                <h3>Agenda Sanitaria</h3>
+                <ul>
+                    <li><a>Pedir cita atención primaria</a></li>
+                    <li><a>Mis citas</a></li>
+                    <li><a>Lista de espera quirúrgica</a></li>
+                </ul>
+            </div>
+
+            <div class="bloque-opcion">
+                <picture>
+                    <source srcset="img/agenda.png" type="image/png">
+                    <img src="img/salud.png">
+                </picture>
+                <h3>Salud</h3>
+                <ul>
+                    <li><a>Datos básicos de salud</a></li>
+                    <li><a>Certificados COVID-19</a></li>
+                    <li><a>Medicación</a></li>
+                    <li><a>Informes clínicos</a></li>
+                    <li><a>Pruebas analíticas</a></li>
+                    <li><a>Pruebas de imagen</a></li>
+                    <li><a>Vacunas</a></li>
+                    <li><a>Incapacidad temporal</a></li>
+                </ul>
+            </div>
+
+            <div class="bloque-opcion">
+                <picture>
+                    <source srcset="img/agenda.png" type="image/png">
+                    <img src="img/tramites.png">
+                </picture>
+                <h3>Trámites</h3>
+                <ul>
+                    <li><a>Renovar tarjeta sanitaria</a></li>
+                    <li><a>Desplazamiento temporal</a></li>
+                    <li><a>Elección de centro y profesional</a></li>
+                </ul>
+            </div>
+
+            <div class="bloque-opcion">
+                <picture>
+                    <source srcset="img/agenda.png" type="image/png">
+                    <img src="img/datos.png">
+                </picture>
+                <h3>Datos Personales</h3>
+                <ul>
+                    <li><a>Datos administrativos</a></li>
+                    <li><a>Datos de contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="bloque-opcion">
+                <picture>
+                    <source srcset="img/agenda.png" type="image/png">
+                    <img src="img/seguimiento.png">
+                </picture>
+                <h3>Seguimiento</h3>
+            </div>
+        </div>
+        <div id="info-privado">
+            <h2>Información para Sector Privado</h2>
+            <p>Contenido específico para usuarios del sector privado...</p>
+        </div>
+    </section>
+</body>
+
+</html>
