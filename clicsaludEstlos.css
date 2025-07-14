@@ -1,4 +1,3 @@
-/* Estilos base */
 body {
     margin: 0;
     padding: 0;
@@ -48,7 +47,7 @@ img {
 
 #logo-consejeria img {
     margin-top: 20px;
-    margin-left: 25px; /* corregido: sin espacio antes de px */
+    margin-left: 25px;
     height: 90px;
     width: auto;
 }
@@ -297,20 +296,5 @@ img {
     #info-publico {
         grid-template-columns: 1fr;
         padding: 10px;
-    }
-}
-
-    #acceso {
-        align-items: flex-start;
-        margin-top: 10px;
-    }
-
-    #busqueda {
-        justify-content: center;
-    }
-
-    .bloque-opcion picture img {
-        width: 100px;
-        height: 100px;
     }
 }
