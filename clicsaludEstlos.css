@@ -2,12 +2,18 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
 
 #cabecera-salud {
     background: #588157;
     width: 100%;
-    padding: 10px 10px;
+    padding: 10px;
     box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
@@ -32,7 +38,6 @@ body {
 }
 
 #logo-consejeria {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.2em;
     letter-spacing: 1px;
     display: flex;
@@ -42,7 +47,7 @@ body {
 
 #logo-consejeria img {
     margin-top: 20px;
-    margin-left: 25 px;
+    margin-left: 25px; /* corregido: sin espacio antes de px */
     height: 90px;
     width: auto;
 }
@@ -50,8 +55,6 @@ body {
 #logo-consejeria h1 {
     margin-top: 35px;
 }
-
-
 
 #acceso {
     display: flex;
@@ -131,18 +134,17 @@ body {
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
     overflow: hidden;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
 }
 
 #publico {
     background-image: url('img/publico.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 #privado {
     background-image: url('img/privado.jpg');
-    background-size: cover;
-    background-position: center;
 }
 
 #publico::before,
@@ -154,12 +156,6 @@ body {
     transition: background 0.4s ease;
     border-radius: 12px;
     z-index: 0;
-}
-
-#publico,
-#privado {
-    position: relative;
-    z-index: 1;
 }
 
 #publico:hover::before,
@@ -190,7 +186,7 @@ body {
     background: white;
     border-radius: 8px;
     padding: 15px 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .bloque-opcion picture img {
@@ -234,4 +230,3 @@ body {
     color: #1e5a2e;
     text-decoration: underline;
 }
-
