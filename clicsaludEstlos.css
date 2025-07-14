@@ -232,34 +232,73 @@ img {
     text-decoration: underline;
 }
 
-/* 🎯 Media Queries para móviles */
 @media (max-width: 600px) {
-    #publico,
-    #privado {
-        width: 90vw;
-        max-width: 100%;
-        height: auto;
-        aspect-ratio: 3 / 5;
+    #cabecera-salud {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    #logo-consejeria {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+    }
+
+    #logo-consejeria h1 {
         font-size: 1.2rem;
+        margin: 0;
+    }
+
+    #acceso {
+        align-items: flex-start;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+
+    #busqueda {
+        width: 100%;
+        justify-content: center;
+    }
+
+    #busqueda input[type="search"] {
+        width: 90%;
+        max-width: 300px;
+        font-size: 1rem;
+    }
+
+    #mensaje-asistencia {
+        margin: 15px 10px;
+        font-size: 0.95rem;
     }
 
     #selector-sector {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
+        padding: 10px;
+    }
+
+    #publico,
+    #privado {
+        width: 90vw;
+        height: auto;
+        aspect-ratio: 3 / 4;
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+
+    .bloque-opcion picture img {
+        width: 80px;
+        height: 80px;
     }
 
     #info-publico {
-        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+        grid-template-columns: 1fr;
+        padding: 10px;
     }
-
-    #logo-consejeria {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #logo-consejeria h1 {
-        margin-top: 10px;
-    }
+}
 
     #acceso {
         align-items: flex-start;
