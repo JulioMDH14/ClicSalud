@@ -238,22 +238,29 @@ img {
         padding: 10px;
     }
 
-    #logo-consejeria {
-        flex-direction: row;
-        align-items: center;
-        gap: 10px;
-        width: 100%;
+    #logo-consejeria img {
+        max-height: 60px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
 
     #logo-consejeria h1 {
-        font-size: 1.2rem;
-        margin: 0;
+        font-size: 1.5em;
+        margin-left: 10px;
     }
 
     #acceso {
-        align-items: flex-start;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
         margin-top: 10px;
         font-size: 0.9rem;
+    }
+
+    #acceso a {
+        margin: 0;
     }
 
     #busqueda {
@@ -281,11 +288,13 @@ img {
 
     #publico,
     #privado {
-        width: 90vw;
-        height: auto;
-        aspect-ratio: 3 / 4;
-        font-size: 1.1rem;
-        padding: 20px;
+        width: 100%;
+        max-width: 320px;
+        height: 200px;
+        font-size: 1rem;
+        padding: 15px;
+        background-size: cover;
+        background-position: center center;
     }
 
     .bloque-opcion picture img {
